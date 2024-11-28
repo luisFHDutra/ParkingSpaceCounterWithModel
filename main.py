@@ -69,7 +69,7 @@ while ret:
         else:
             frame = cv2.rectangle(frame, (x1, y1), (x1 + w, y1 + h), (0, 0, 255), 2)
 
-    cv2.rectangle(frame, (80, 20), (550, 80), (0, 0, 0), -1)
+    cv2.rectangle(frame, (80, 20), (400, 80), (0, 0, 0), -1)
     cv2.putText(frame, "Free {} / {}".format(str(sum(spots_status)), str(len(spots_status))), (108, 68), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
 
     cv2.namedWindow("frame", cv2.WINDOW_NORMAL)
